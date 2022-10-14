@@ -87,3 +87,47 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.page-width2 > header > .medium-up--one-half {
+	width: 100%;
+}
+
+
+
+
+.custom-content {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	display: block;
+}
+
+.hero {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+img.hero {
+	display: none;
+}
+
+.card {
+	width: 90%;
+	max-width: 900px;
+	margin: 12px auto;
+	padding: 16px;
+	background: #FFF;
+	border-radius: 2px;
+	position:relative;
+	z-index:2;
+	box-shadow:0 8px 16px -5px rgba(0,0,0,0.1);
+	/*transform:translateY(-20%);*/
+}
+
+.custom-content p {
+	text-align:center;
+	font-size: 18px;
+	line-height:1.6;
+}
