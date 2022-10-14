@@ -1,3 +1,20 @@
+function(){
+	let stylesheet = document.createElement('link');
+		stylesheet.setAttribute('href','https://raw.githubusercontent.com/nickbanders/jc-landing-page/main/style.css');
+		stylesheet.setAttribute('rel','stylesheet');
+		stylesheet.setAttribute('type','text/css');
+	
+	let video = document.createElement('video');
+		video.setAttribute('src','https://hou-public.s3.amazonaws.com/shared/josh_christopher_x_rockets_line.mp4');
+		video.classList.add('hero');
+		video.autoplay = 'autoplay';
+		video.muted = 'muted';
+		video.controls = 'controls';
+
+	document.querySelector('head').appendChild(stylesheet);
+	document.querySelector('.custom-content').prepend(video);	
+}());
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,19 +44,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-(function(){
-	let stylesheet = document.createElement('link');
-		stylesheet.setAttribute('href','https://raw.githubusercontent.com/nickbanders/jc-landing-page/main/style.css');
-		stylesheet.setAttribute('rel','stylesheet');
-		stylesheet.setAttribute('type','text/css');
-	
-	let video = document.createElement('video');
-		video.setAttribute('src','https://hou-public.s3.amazonaws.com/shared/josh_christopher_x_rockets_line.mp4');
-		video.classList.add('hero');
-		video.autoplay = 'autoplay';
-		video.muted = 'muted';
-		video.controls = 'controls';
-
-	document.querySelector('head').appendChild(stylesheet);
-	document.querySelector('.custom-content').prepend(video);	
-}());
