@@ -29,7 +29,7 @@ function showSlides(n) {
 
 (function(){
 	let stylesheet = document.createElement('link');
-		stylesheet.setAttribute('href','https://hou-public.s3.amazonaws.com/shared/shop-jaygup.css');
+		stylesheet.setAttribute('href','https://raw.githubusercontent.com/nickbanders/jc-landing-page/main/style.css');
 		stylesheet.setAttribute('rel','stylesheet');
 		stylesheet.setAttribute('type','text/css');
 	
